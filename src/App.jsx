@@ -1,3 +1,4 @@
+import { Route, Routes } from "react-router-dom";
 import AppBar from "./components/AppBar/AppBar";
 import Menu from "./components/Menu/Menu";
 
@@ -6,6 +7,13 @@ function App() {
     <>
       <AppBar />
       <Menu />
+
+      <Routes>
+        <Route path="/" element={""} />
+        <Route path="/about" element={""} />
+        <Route path="/products" element={""} />
+        <Route path="*" element={""} />
+      </Routes>
     </>
   );
 }

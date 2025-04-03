@@ -1,14 +1,28 @@
-import { Sidebar, Image, List } from "./Menu.styled";
+import { Sidebar, Image, List, Link } from "./Menu.styled";
 
 export default function Menu() {
   return (
     <Sidebar>
       <Image src="/images/Sidebar/TrumpPortrait.jpg" alt="" />
-      <List>
-        {/* <li>1</li>
-        <li>2</li>
-        <li>3</li> */}
-      </List>
+      <nav>
+        <List>
+          <li>
+            <Link to="/">ПРИХОД</Link>
+          </li>
+          <li>
+            <Link to="/groups">ГРУППЫ</Link>
+          </li>
+          <li>
+            <Link to="/products">ПРОДУКТЫ</Link>
+          </li>
+          <li>
+            <Link to="/users">ПОЛЬЗОВАТЕЛИ</Link>
+          </li>
+          <li>
+            <Link to="/settings">НАСТРОЙКИ</Link>
+          </li>
+        </List>
+      </nav>
     </Sidebar>
   );
 }
