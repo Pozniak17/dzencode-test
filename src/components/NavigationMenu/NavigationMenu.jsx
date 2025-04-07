@@ -1,6 +1,6 @@
-import { Sidebar, Image, List, Link } from "./Menu.styled";
+import { Sidebar, Image, List, Link } from "./NavigationMenu.styled";
 
-export default function Menu() {
+export default function NavigationMenu() {
   return (
     <Sidebar>
       <Image src="/images/Sidebar/TrumpPortrait.jpg" alt="" />

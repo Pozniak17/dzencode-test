@@ -1,16 +1,18 @@
 import { Route, Routes } from "react-router-dom";
-import AppBar from "./components/AppBar/AppBar";
-import Menu from "./components/Menu/Menu";
+import NavigationMenu from "./components/NavigationMenu/NavigationMenu";
+import TopMenu from "./components/TopMenu/TopMenu";
+import OrdersPage from "./pages/OrdersPage/OrdersPage";
+import ProductsPage from "./pages/ProductsPage/ProductsPage";
 
 function App() {
   return (
     <>
-      <AppBar />
-      <Menu />
+      <TopMenu />
+      <NavigationMenu />
 
       <Routes>
-        <Route path="/" element={""} />
-        <Route path="/about" element={""} />
+        <Route path="/" element={<OrdersPage />} />
+        <Route path="/orders" element={<ProductsPage />} />
         <Route path="/products" element={""} />
         <Route path="*" element={""} />
       </Routes>

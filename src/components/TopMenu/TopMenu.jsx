@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import { GiBlackHandShield } from "react-icons/gi";
 import { MdAccessTime } from "react-icons/md";
-import { Header, LogoWrapper, TimeWrapper, TimeText } from "./AppBar.styled";
+import { Header, LogoWrapper, TimeWrapper, TimeText } from "./TopMenu.styled";
 import Form from "../Form/Form";
 import { ru } from "date-fns/locale";
 import { format } from "date-fns";
 
-export default function AppBar() {
+export default function TopMenu() {
   const [time, setTime] = useState(new Date());
 
   useEffect(() => {
